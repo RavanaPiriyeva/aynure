@@ -1,0 +1,59 @@
+@import "../vendors//mixins";
+
+.login{
+  padding: 40px 0;
+  @include backcolor;
+  .login_title {
+    @include causestitle;
+    h2 {
+      @include pagetitle;
+    }
+    button {
+      @include buttonpreparty;
+    }
+  }
+}
+
+.login__wrapper {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login-inp{
+    background-color: rgb(241,174,68);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    &::placeholder{
+        color: white;
+    }
+}
+
+.login-button{
+    border-radius: 5px;
+    padding: 10px;
+    background: #0D52FF;
+    color: white;
+    border: none;
+}
+
+.login-button:hover{
+    background: #1644bb;
+    transition: all 0.2s;
+}
+
+.login-links{
+    color: #e36955;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.login-links:hover{
+    color: #e73317;
+}
